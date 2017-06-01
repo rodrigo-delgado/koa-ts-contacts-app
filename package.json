@@ -1,0 +1,49 @@
+{
+  "name": "koa-ts-contacts-app",
+  "version": "1.0.0",
+  "description": "Building a simple contact management application using Node.js, TypeScript, Koa.js, Handlebars and Webpack.",
+  "main": "server.js",
+  "scripts": {
+    "clean": "gulp clean",
+    "lint": "tslint --project ./tsconfig.json --type-check --fix",
+    "build": "gulp",
+    "watch:build": "npm run build; gulp watch",
+    "watch:server": "nodemon ./dist/server.js --watch",
+    "start": "npm run build && node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoltan-nz/koa-ts-contacts-app.git"
+  },
+  "author": "Zoltan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoltan-nz/koa-ts-contacts-app/issues"
+  },
+  "homepage": "https://github.com/zoltan-nz/koa-ts-contacts-app#readme",
+  "devDependencies": {
+    "@types/del": "^2.2.32",
+    "@types/gulp": "^4.0.3",
+    "@types/gulp-sourcemaps": "0.0.30",
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.23",
+    "@types/koa-hbs": "^1.0.1",
+    "@types/koa-router": "^7.0.22",
+    "@types/node": "^7.0.22",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-tslint": "^8.1.0",
+    "gulp-typescript": "^3.1.7",
+    "nodemon": "^1.11.0",
+    "ts-node": "^3.0.4",
+    "tslint": "^5.3.2",
+    "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-hbs": "^1.0.0",
+    "koa-router": "^7.2.0"
+  }
+}
